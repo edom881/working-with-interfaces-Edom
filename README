@@ -1,0 +1,12 @@
+# Working With Interfaces
+
+This Java project demonstrates how to use the Comparable interface to sort custom objects.
+
+The application creates a Person class with:
+- first name
+- last name
+- age
+
+The Person class implements Comparable<Person> and overrides the compareTo() method so Java can sort Person objects by last name.
+
+The program stores Person objects in an ArrayList, sorts them using Collections.sort(), and displays the sorted list.
