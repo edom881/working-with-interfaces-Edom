@@ -17,6 +17,10 @@ public class Main {
         myFamily.add(new Person("Ezra", "Aiden", 17));
 
         Collections.sort(myFamily);
+
+        for (Person person : myFamily) {
+            System.out.println(person);
+        }
     }
 
 }
