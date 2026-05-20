@@ -15,5 +15,9 @@ public class Person implements Comparable<Person> {
         this.lastName = lastName;
         this.age = age;
     }
+    @Override
+    public String toString() {
+        return firstName + " " + lastName + " - Age: " + age;
+    }
 }
 
