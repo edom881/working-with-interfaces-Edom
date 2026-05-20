@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 public class Main {
+
     public static void main(String[] args) {
 
         ArrayList<Person> myFamily = new ArrayList<>();
@@ -14,6 +15,8 @@ public class Main {
         myFamily.add(new Person("Ian", "Austin", 16));
         myFamily.add(new Person("Zephaniah", "Hughes", 9));
         myFamily.add(new Person("Ezra", "Aiden", 17));
+
+        Collections.sort(myFamily);
     }
 
 }
