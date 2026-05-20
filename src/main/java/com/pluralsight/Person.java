@@ -1,6 +1,11 @@
 package com.pluralsight;
 
-public class Person {
+public class Person implements Comparable<Person> {
+
+    @Override
+    public int compareTo(Person otherPerson) {
+        return this.lastName.compareTo(otherPerson.lastName);
+    }
     private String firstName;
     private String lastName;
     private int age;
