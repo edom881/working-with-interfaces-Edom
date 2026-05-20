@@ -2,10 +2,7 @@ package com.pluralsight;
 
 public class Person implements Comparable<Person> {
 
-    @Override
-    public int compareTo(Person otherPerson) {
-        return this.lastName.compareTo(otherPerson.lastName);
-    }
+
     private String firstName;
     private String lastName;
     private int age;
@@ -14,6 +11,10 @@ public class Person implements Comparable<Person> {
         this.firstName = firstName;
         this.lastName = lastName;
         this.age = age;
+    }
+    @Override
+    public int compareTo(Person otherPerson) {
+        return this.lastName.compareTo(otherPerson.lastName);
     }
     @Override
     public String toString() {
